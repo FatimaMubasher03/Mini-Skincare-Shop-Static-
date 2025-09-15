@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login – Glowing Sand</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Glowing Sand</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" aria-disabled="true" title="Coming soon">Contact</a>
+        <a href="login.html" class="active">Login</a>
+        <a href="cart.html" class="cart-link" aria-label="Cart">🛒 <span id="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section auth">
+    <h1 class="section-title">Login to Glowing Sand</h1>
+    <form id="login-form" class="card" novalidate>
+      <div class="form-field">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="Enter username" required />
+        <small class="error" id="username-error" hidden>Username is required.</small>
+      </div>
+
+      <div class="form-field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter password" required />
+        <small class="error" id="password-error" hidden>Password is required.</small>
+      </div>
+
+      <button class="btn" type="submit">Login</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Glowing Sand. All rights reserved.</p>
+      <p>Contact: support@glowingsand.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+/* =============================
+   Glowing Sand – Styles
+   ============================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fdf6f0; /* soft beige */
+  color: #4a3f35;      /* warm brownish text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* --- Header / Navbar --- */
+header {
+  background: #fce4ec; /* soft pink */
+  color: #4a3f35;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d17b8d; /* elegant pink accent */
+  text-decoration: none;
+  font-family: 'Georgia', serif; /* optional: gives elegant vibe */
+}
+
+
+nav a {
+  color: #4a3f35;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+}
+
+nav a:hover,
+nav a.active {
+  background: #f8bbd0;
+  color: #fff;
+}
+
+/* Cart badge */
+#cart-count {
+  background: #d17b8d;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
+
+/* --- Hero Section (Homepage) --- */
+.hero {
+  background: url("images/a1.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 8rem 2rem;  /* Increased padding to make it taller */
+  border-radius: 8px;
+  min-height: 100vh;   /* makes it fill the screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #3e2723; /* dark pink rose */
+}
+
+.hero .tagline {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #5c4033; /* warm brown for contrast */
+}
+
+
+.hero-btn {
+  display: inline-block;
+  margin: 2rem auto 0 auto; /* centers the button */
+  padding: 0.8rem 2rem;
+  background: #e6b7c8;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #d17b8d;
+}
+
+
+/* --- Buttons --- */
+.btn {
+  background: linear-gradient(135deg, #e6b7c8, #d17b8d);
+  border: none;
+  padding: 0.7rem 1.2rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  background: linear-gradient(135deg, #d17b8d, #b36c7a);
+}
+
+/* --- Footer --- */
+footer {
+  background: #fce4ec;
+  color: #4a3f35;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* --- Product Grid --- */
+#products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.product-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 0.5rem 0;
+}
+
+.product-card .price {
+  font-size: 1.1rem;
+  color: #d17b8d;
+  margin-bottom: 0.5rem;
+}
+
+.product-card button {
+  background: linear-gradient(135deg, #e6b7c8, #d17b8d);
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.product-card button:hover {
+  background: linear-gradient(135deg, #d17b8d, #b36c7a);
+}
+
+/* --- Cart Page --- */
+#cart-items {
+  padding: 2rem;
+}
+
+.cart-item {
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.cart-item img {
+  width: 100px;
+  border-radius: 6px;
+}
+
+.cart-item button {
+  background: #d17b8d;
+  color: white;
+  border: none;
+  margin-right: 5px;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cart-item button:hover {
+  background: #b36c7a;
+}
+
+#cart-total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  padding: 1rem 2rem;
+  color: #d17b8d;
+}
+
+/* --- Login Page --- */
+.auth .card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 300px;
+  margin-inline: auto;
+}
+#login-form input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+#login-form button {
+  width: 100%;
+  padding: 0.7rem;
+  background: linear-gradient(135deg, #e6b7c8, #d17b8d);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#login-form button:hover {
+  background: linear-gradient(135deg, #d17b8d, #b36c7a);
+}
+
+
+/* --- Contact Page --- */
+.contact-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-intro {
+  margin-bottom: 2rem;
+  color: #6b5e55;
+}
+
+#contact-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+#contact-form .form-field {
+  margin-bottom: 1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-info {
+  background: #fce4ec;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.contact-info h2 {
+  margin-bottom: 1rem;
+  color: #d17b8d;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+.contact-info a {
+  color: #d17b8d;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}

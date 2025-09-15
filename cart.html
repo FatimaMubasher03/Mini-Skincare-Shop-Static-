@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Cart – Glowing Sand</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Glowing Sand</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" aria-disabled="true" title="Coming soon">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html" class="cart-link active" aria-label="Cart">🛒 <span id="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section" id="cart-page">
+    <h1 class="section-title">Your Cart</h1>
+
+    <div id="cart-empty" class="muted" hidden>
+      Your cart is empty. <a href="products.html">Browse products</a> to add items.
+    </div>
+
+    <div id="cart-items" class="cart-list"></div>
+
+    <div id="cart-summary" class="cart-summary" hidden>
+      <div class="summary-line">
+        <span>Total</span>
+        <strong id="cart-total">PKR 0</strong>
+      </div>
+      <button class="btn" id="checkout-btn" type="button">Checkout</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Glowing Sand. All rights reserved.</p>
+      <p>Contact: support@glowingsand.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
